@@ -333,6 +333,10 @@ footer{
     max-width: 100%;
 }
 
+.copyright{
+    margin: auto;
+}
+
 
 /* Responsividad */
 @media (max-width: 768px) {
@@ -504,7 +508,7 @@ max-width: 100px;
         width: 350px;
       
         margin-top: 20px;
-        margin-bottom: 35px;
+        margin-bottom: 20px;
     }
 
 
