@@ -360,8 +360,7 @@ footer{
 @media screen and (max-width: 400px) {
     /* Estilos específicos para pantallas menores de 480px */
 
- 
-    h1 img{
+  h1 img{
     max-width: 100px;
     margin: auto;
    }
@@ -371,7 +370,7 @@ nav{
 
 
     position: absolute;
-    top: 150px;
+  margin-top: -40px;
     right: 0;
 
     display: inline-block;
@@ -384,13 +383,20 @@ nav{
      nav li {
         display: inline-block;
         margin-right: 0;
+        margin-top: 10px;
+      
     }
 
    
 
     #mision{
+        width: 80%;
         max-width: 80%;
       
+    }
+
+    #mision em{
+        max-width: fit-content;
     }
 
     iframe{
@@ -403,7 +409,7 @@ nav{
 
     .principal p{
       
-        margin-left: 10px;
+    margin: auto;
  
       
     }
@@ -428,7 +434,7 @@ nav{
 
     .caja img {
         margin-left: 20px;
-        width: 170px;
+        width: 35%;
        margin-left: -90px;
        
     }
@@ -451,7 +457,7 @@ max-width: 100px;
     }
 
     .caja{
-        max-width:150px;
+        max-width:250px;
     }
 
     .mapa-contenido{
@@ -459,16 +465,17 @@ max-width: 100px;
     }
 
     .video{
-    width: 80%;
-margin: auto;
-      padding-right: 8px;
-      padding-left: 8px;
+    width: 100%;
+    margin-left: 0px;
+
+   
+    
  
     }
 
     .video iframe{
         max-width: 100%;
-        margin: auto;
+    
       
 
     }
@@ -501,9 +508,13 @@ margin: auto;
 }
 
 @media (max-width: 768px) {
+   /*
+   
     * {
         outline: 1px solid red;
       }
+
+      */
 
       #mision{
         max-width: 80%;
