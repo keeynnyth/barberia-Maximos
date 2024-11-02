@@ -1,3 +1,11 @@
+html, body {
+    overflow-x: hidden; /* Oculta cualquier contenido que se desborde horizontalmente */
+    margin: 0;
+    padding: 0;
+  }
+  
+
+
 body{
     font-family: 'Montserrat', sans-serif;
     display: flex;
@@ -360,6 +368,8 @@ footer{
 @media screen and (max-width: 400px) {
     /* Estilos específicos para pantallas menores de 480px */
 
+ 
+
   h1 img{
     max-width: 100px;
     margin: auto;
@@ -391,38 +401,43 @@ nav{
 
     #mision{
         width: 80%;
-        max-width: 80%;
+        max-width: fit-content;
+       
       
     }
 
     #mision em{
         max-width: fit-content;
+        width: 100%;
     }
+    
 
     iframe{
         max-width: 360px;
     }
 
     .principal{
-        max-width: 90%;
+        max-width: fit-content;
+        width: 80%;
     }
 
     .principal p{
       
     margin: auto;
+    width: 100%;
  
       
     }
 
     .diferenciales{
     
-        flex-direction: column;
+     flex-direction: row;
     }
 
     .contenido-diferenciales {
         width: 200px;
         display: flex;
-        flex-direction: column;
+      
         align-items: center;
         margin-top: -10px;
     }
@@ -431,6 +446,8 @@ nav{
         max-width:300px ;
         
     }
+    
+
 
     .caja img {
         margin-left: 20px;
@@ -462,7 +479,10 @@ max-width: 100px;
 
     .mapa-contenido{
         max-width: 320px;
+        
     }
+
+ 
 
     .video{
     width: 100%;
@@ -485,21 +505,42 @@ max-width: 100px;
         margin-top: 20px;
     }
 
-    .lista-diferenciales li{
-   
-        display: flex;
-  flex-wrap: wrap;
-  width: 90%;
-  margin-left: -100px;
-  text-align: center;
-  justify-content: center;
-  margin-top: -10px;
-  
-    }
 
    p{
-        line-height: 1.2;
+        line-height: 1.3;
+        padding: 0;
+        color: #088c19;
+        width: 100%;
        
+    }
+
+    .productos li img{
+        max-width: 80%;
+    }
+
+    .diferenciales{
+    
+        flex-direction: column;
+    }
+
+    .contenido-diferenciales {
+        width: 95%;
+     
+        
+        align-items: center;
+        margin-top: -10px;
+      
+    }
+
+
+    .lista-diferenciales li{
+   
+     
+
+  width: 100%;
+
+ 
+  
     }
 
    
@@ -553,7 +594,7 @@ max-width: 100px;
         
     .video{
         width: 90%;
-          margin-right: -50px;
+       
           padding-right: 8px;
           padding-left: 8px;
         }
@@ -564,7 +605,10 @@ max-width: 100px;
         }
     
 
-        
+        .productos li img{
+            max-width: 80%;
+        }
+    
    
  
     
@@ -614,6 +658,7 @@ max-width: 100px;
     .lista-diferenciales li{
    
         display: inline-flex;
+        margin-bottom: 20px;
 
   width: 100%;
 
@@ -662,6 +707,7 @@ table{
 
 .enviar{
     width: 50%;
+   margin-left: 25%;
 }
 
 }
